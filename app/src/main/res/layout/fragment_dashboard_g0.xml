@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최다 검색 도서"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30px"
+                android:paddingBottom="30px">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="30px"
+                    android:padding="3dp"
+                    android:src="@mipmap/b1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그릿 (GRIT)"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="앤절라 더크워스 ‧ 비즈니스북스"
+                    android:textSize="15sp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="청구기호: 종 325.211- 더877ㄱ"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='❤️ 8.76'
+                    />
+                <TextView
+                    android:textSize="14dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"😎 성공하고 싶다면 꺼내볼 책"'
+                    />
+                <Button
+                    android:id="@+id/bg0"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#008000"
+                    android:onClick="bonClicked"
+                    android:text="대출 예약하기" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#a0a0a0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30px"
+                android:paddingBottom="30px">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="30px"
+                    android:padding="3dp"
+                    android:src="@mipmap/b2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="슬픔이 택배로 왔다"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정호승 시집 ‧ 창비"
+                    android:textSize="15sp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="청구기호:종 811.7- 정95ㄷ"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='❤️ 9.69'
+                    />
+                <TextView
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"😢 아름답고 따뜻한 위로 "'
+                    />
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0055FF"
+                    android:text="대출중" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#a0a0a0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30px"
+                android:paddingBottom="30px">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="30px"
+                    android:padding="3dp"
+                    android:src="@mipmap/b3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사피엔스"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="유발 하라리 ‧ 김영사"
+                    android:textSize="15sp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="청구기호: 종 909- 하292ㅅ-2"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='❤️ 9.3'
+                    />
+                <TextView
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"🧐 행복한 사피엔스가 되기 위한 방법"'
+                    />
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0055FF"
+                    android:text="대출중" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#a0a0a0" />
+    </LinearLayout>
+</ScrollView>

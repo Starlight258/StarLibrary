@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/pageMarginAndOffset"
+        android:layout_marginRight="@dimen/pageMarginAndOffset"
+        android:layout_height="250dp"
+        android:background="#F9F0E8"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pi1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="160dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/n1" />
+
+        <TextView
+            android:id="@+id/tvName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="개발자 원칙"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="박성철, 강대명 ‧ 골든래빗(주)"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

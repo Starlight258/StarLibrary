@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.my.MyFragment"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/logo" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="별빛 도서관"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="별빛동 빛아람로 83번길"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12월 신작 도서"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="220dp"
+
+                    />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12월 인기 도서"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager2"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/indicator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="도서관 찾아오는 길"
+                android:layout_marginTop="20dp"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"/>
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/map"
+                tools:context=".MapsActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
